@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern portfolio website for a React Native mobile developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000 || python -m http.server 3000",
+    "dev": "python3 -m http.server 8080 || python -m http.server 8080",
+    "serve": "npx http-server -p 3000 -o"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "mobile",
+    "react-native",
+    "developer",
+    "ios",
+    "android"
+  ],
+  "author": "Arnold Camas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/portfolio"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
