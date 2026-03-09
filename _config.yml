@@ -28,8 +28,8 @@ social:
   twitter: your-twitter-username
   
 # SEO settings
-url: "https://your-username.github.io"
-baseurl: "/portfolio"  # Change this to your repository name
+url: "https://arnoldc.github.io"
+baseurl: "/website"
 
 # Theme (optional - GitHub Pages supports these themes)
 # theme: minima
