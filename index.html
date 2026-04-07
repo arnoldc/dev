@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -91,7 +93,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">What I work with</p>
+                <p class="section-subtitle">What I work with these days</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
@@ -164,23 +166,20 @@
                 <p class="section-subtitle">Sharing my thoughts and experiences</p>
             </div>
             <div class="blog-grid">
+                {% for post in site.posts %}
                 <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog1.jpg" alt="Getting Started with React Native" />
-                        <div class="blog-date">
-                            <span>Mar 10, 2026</span>
-                        </div>
-                    </div>
                     <div class="blog-content">
-                        <div class="blog-category">Mobile Development</div>
-                        <h3>Getting Started with React Native</h3>
-                        <p>After 15 years of software development, here's what I wish I knew when I first picked up React Native — from setup to the concepts that actually matter.</p>
+                        <div class="blog-date-text">{{ post.date | date: "%b %d, %Y" }}</div>
+                        <div class="blog-category">{{ post.category }}</div>
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
                         <div class="blog-meta">
-                            <span class="read-time">5 min read</span>
-                            <a href="/website/getting-started-with-react-native/" class="read-more">Read More →</a>
+                            <span class="read-time">{{ post.read_time }}</span>
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read →</a>
                         </div>
                     </div>
                 </article>
+                {% endfor %}
             </div>
             
         </div>
@@ -203,21 +202,15 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>arnold.camas@email.com</span>
+                            <span>arnold.camas@gmail.com</span>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" target="_blank">
+                        <a href="https://www.linkedin.com/in/arnoldcamas/" class="social-link" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="social-link" target="_blank">
+                        <a href="https://github.com/arnoldc" class="social-link" target="_blank">
                             <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" target="_blank">
-                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>

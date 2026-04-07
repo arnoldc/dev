@@ -2,7 +2,7 @@
 title: Arnold Camas - React Native Mobile Developer
 description: Personal portfolio and blog featuring React Native mobile development for iOS and Android
 author: Arnold Camas
-email: arnold.camas@email.com
+email: arnold.camas@gmail.com
 
 # Build settings
 markdown: kramdown
@@ -23,9 +23,8 @@ exclude:
 
 # Social links (update with your actual profiles)
 social:
-  github: your-github-username
-  linkedin: your-linkedin-username
-  twitter: your-twitter-username
+  github: arnoldc
+  linkedin: arnoldcamas
   
 # SEO settings
 url: "https://arnoldc.github.io"
