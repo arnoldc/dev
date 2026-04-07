@@ -28,7 +28,7 @@ social:
   
 # SEO settings
 url: "https://arnoldc.github.io"
-baseurl: "/website"
+baseurl: "/dev"
 
 # Theme (optional - GitHub Pages supports these themes)
 # theme: minima
