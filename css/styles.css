@@ -5,7 +5,7 @@
     --color-accent: #FF9F1C;   /* amber neon: headings, borders, highlights */
     --color-text: #3DDBD9;     /* teal: body text */
 
-    --font-display: 'Michroma', sans-serif;  /* wide sci-fi film-title capitals: headings, buttons */
+    --font-display: 'IBM Plex Mono', monospace;  /* headings, buttons, logo */
     --font-body: 'IBM Plex Mono', monospace;
 }
 
@@ -36,7 +36,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.4;
 }
 
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
     text-decoration: none;
     font-family: var(--font-display);
-    font-weight: 400;
+    font-weight: 700;
     border: 3px solid transparent;
     cursor: pointer;
     font-size: 13px;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-logo a {
     font-family: var(--font-display);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--color-accent);
     text-decoration: none;
 }
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
     color: var(--color-accent);
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: var(--font-display);
 }
 
