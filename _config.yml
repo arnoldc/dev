@@ -17,9 +17,10 @@ plugins:
 # Exclude files from processing
 exclude:
   - README.md
-  - package.json
-  - node_modules/
-  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - serve.sh
+  - vendor/
 
 # Social links (update with your actual profiles)
 social:
