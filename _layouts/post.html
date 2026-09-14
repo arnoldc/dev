@@ -79,6 +79,14 @@
         .post-body li {
             margin-bottom: 8px;
         }
+        .post-body ul.task-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        .post-body .task-list-item-checkbox {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
         .post-body table {
             width: 100%;
             border-collapse: collapse;
@@ -101,6 +109,25 @@
         }
         .post-body tr:nth-child(even) {
             background: rgba(133, 64, 156, 0.3);
+        }
+        .post-body img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 2px solid #EEA727;
+        }
+        .post-body img.img-portrait {
+            max-width: min(280px, 100%);
+        }
+        .post-body figure {
+            margin-bottom: 20px;
+        }
+        .post-body figcaption {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #EEA727;
         }
         .back-link {
             display: inline-block;

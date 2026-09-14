@@ -389,6 +389,11 @@ section {
     color: #4D2B8C;
 }
 
+.blog-empty {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 
 /* Contact Section */
 .contact-full-width {

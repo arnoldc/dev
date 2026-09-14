@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Getting Started with React Native"
+title: "Formatting Test Bed"
 date: 2026-03-10
-category: Mobile Development
+category: Test
 read_time: 5 min read
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+excerpt: "Every markdown element the post layout needs to handle. Lives in _drafts, so it never ships to the live site."
+unlisted: true  # kept out of the homepage blog list; open it directly at /dev/formatting-test-bed/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. **Ut enim ad minim veniam**, quis nostrud exercitation ullamco laboris. This post showcases *everything* you can do in a blog post.
@@ -112,7 +113,36 @@ A JSON config example:
 
 ## Images
 
-![Placeholder Image](https://placehold.co/600x200/4D2B8C/EEA727?text=Lorem+Ipsum&font=mono)
+### Remote image
+
+A 1200×600 photo from [Lorem Picsum](https://picsum.photos). It should shrink to fit the column, including on phones.
+
+![Random landscape photo from Lorem Picsum](https://picsum.photos/seed/lorem/1200/600)
+
+### Local image
+
+Stored in the repo at `assets/images/test-bed/wide.svg`. Always link local images through `relative_url` so the `/dev` baseurl is added.
+
+![Local placeholder banner]({{ '/assets/images/test-bed/wide.svg' | relative_url }})
+
+### Image with a caption
+
+<figure>
+  <img src="https://picsum.photos/seed/ipsum/800/500" alt="Random photo from Lorem Picsum">
+  <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+</figure>
+
+### Linked image
+
+Clicking the thumbnail opens the full-size photo.
+
+[![Thumbnail photo from Lorem Picsum](https://picsum.photos/seed/dolor/400/250)](https://picsum.photos/seed/dolor/1600/1000)
+
+### Phone screenshot
+
+A tall 390×844 image, like an app screenshot. The `.img-portrait` class caps its width so it doesn't take over the whole screen.
+
+![Placeholder phone screenshot]({{ '/assets/images/test-bed/phone.svg' | relative_url }}){: .img-portrait}
 
 ## Horizontal Rule
 

@@ -165,8 +165,12 @@
                 <h2 class="section-title">Latest Blog Posts</h2>
                 <p class="section-subtitle">Sharing my thoughts and experiences</p>
             </div>
+            {% assign listed_posts = site.posts | where_exp: "post", "post.unlisted != true" %}
+            {% if listed_posts.size == 0 %}
+            <p class="blog-empty">First post coming soon.</p>
+            {% endif %}
             <div class="blog-grid">
-                {% for post in site.posts %}
+                {% for post in listed_posts %}
                 <article class="blog-card">
                     <div class="blog-content">
                         <div class="blog-date-text">{{ post.date | date: "%b %d, %Y" }}</div>
